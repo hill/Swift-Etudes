@@ -14,6 +14,8 @@
 		35860B9B2C4CFCAA001603E7 /* Swift_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860B9A2C4CFCAA001603E7 /* Swift_LabTests.swift */; };
 		35860BA52C4CFCAA001603E7 /* Swift_LabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BA42C4CFCAA001603E7 /* Swift_LabUITests.swift */; };
 		35860BA72C4CFCAA001603E7 /* Swift_LabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BA62C4CFCAA001603E7 /* Swift_LabUITestsLaunchTests.swift */; };
+		35860BB42C4CFCC6001603E7 /* HapticImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BB32C4CFCC6001603E7 /* HapticImageView.swift */; };
+		35860BB72C4D087C001603E7 /* PressableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BB62C4D087C001603E7 /* PressableModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		35860BA02C4CFCAA001603E7 /* Swift LabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift LabUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35860BA42C4CFCAA001603E7 /* Swift_LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_LabUITests.swift; sourceTree = "<group>"; };
 		35860BA62C4CFCAA001603E7 /* Swift_LabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_LabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35860BB32C4CFCC6001603E7 /* HapticImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticImageView.swift; sourceTree = "<group>"; };
+		35860BB62C4D087C001603E7 /* PressableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		35860B882C4CFCA8001603E7 /* Swift Lab */ = {
 			isa = PBXGroup;
 			children = (
+				35860BB52C4D0859001603E7 /* Modifiers */,
 				35860B892C4CFCA8001603E7 /* Swift_LabApp.swift */,
 				35860B8B2C4CFCA8001603E7 /* ContentView.swift */,
+				35860BB32C4CFCC6001603E7 /* HapticImageView.swift */,
 				35860B8D2C4CFCAA001603E7 /* Assets.xcassets */,
 				35860B8F2C4CFCAA001603E7 /* Preview Content */,
 			);
@@ -125,6 +131,14 @@
 				35860BA62C4CFCAA001603E7 /* Swift_LabUITestsLaunchTests.swift */,
 			);
 			path = "Swift LabUITests";
+			sourceTree = "<group>";
+		};
+		35860BB52C4D0859001603E7 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				35860BB62C4D087C001603E7 /* PressableModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35860BB42C4CFCC6001603E7 /* HapticImageView.swift in Sources */,
 				35860B8C2C4CFCA8001603E7 /* ContentView.swift in Sources */,
+				35860BB72C4D087C001603E7 /* PressableModifier.swift in Sources */,
 				35860B8A2C4CFCA8001603E7 /* Swift_LabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
