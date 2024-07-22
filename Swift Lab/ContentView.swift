@@ -24,13 +24,13 @@ struct ContentView: View {
                     Spacer().frame(height: 100)
                     
                     NavigationLink(destination: HapticImageView()) {
-                        NavLinkView(text: "Day 1")
+                        NavLinkView(text: "Etude 1: Haptic Image")
                     }
                     NavigationLink(destination: SquareGridView()) {
-                        NavLinkView(text: "Day 2")
+                        NavLinkView(text: "Etude 2: Palettes")
                     }
                     NavigationLink(destination: Text("no where still")) {
-                        NavLinkView(text: "Day 3")
+                        NavLinkView(text: "Etude 3")
                     }
                 }
                 .padding()
@@ -41,7 +41,7 @@ struct ContentView: View {
                 
                 VStack {
                     BlurView(
-                        title: "Swift Lab"
+                        title: "Swift Etudes"
                     ).frame(height: 100)
                     Spacer()
                 }.ignoresSafeArea(edges: .top)
