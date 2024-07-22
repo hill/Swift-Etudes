@@ -1,6 +1,5 @@
-#  Swift Studies
-
 <img src="./assets/icon.png" width="80px" height="80px" />
+#  Swift Studies
 
 Tom's SwiftUI experimentation spot.
 
