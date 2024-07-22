@@ -50,6 +50,7 @@
 		35860BB32C4CFCC6001603E7 /* HapticImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticImageView.swift; sourceTree = "<group>"; };
 		35860BB62C4D087C001603E7 /* PressableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableModifier.swift; sourceTree = "<group>"; };
 		35FC10E12C4E572100BF3B45 /* SquareGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGridView.swift; sourceTree = "<group>"; };
+		35FC10E32C4E709200BF3B45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		35860B7D2C4CFCA8001603E7 = {
 			isa = PBXGroup;
 			children = (
+				35FC10E32C4E709200BF3B45 /* README.md */,
 				35860B882C4CFCA8001603E7 /* Swift Lab */,
 				35860B992C4CFCAA001603E7 /* Swift LabTests */,
 				35860BA32C4CFCAA001603E7 /* Swift LabUITests */,
