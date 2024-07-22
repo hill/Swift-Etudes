@@ -16,6 +16,7 @@
 		35860BA72C4CFCAA001603E7 /* Swift_LabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BA62C4CFCAA001603E7 /* Swift_LabUITestsLaunchTests.swift */; };
 		35860BB42C4CFCC6001603E7 /* HapticImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BB32C4CFCC6001603E7 /* HapticImageView.swift */; };
 		35860BB72C4D087C001603E7 /* PressableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BB62C4D087C001603E7 /* PressableModifier.swift */; };
+		35FC10E22C4E572100BF3B45 /* SquareGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC10E12C4E572100BF3B45 /* SquareGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		35860BA62C4CFCAA001603E7 /* Swift_LabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_LabUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		35860BB32C4CFCC6001603E7 /* HapticImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticImageView.swift; sourceTree = "<group>"; };
 		35860BB62C4D087C001603E7 /* PressableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableModifier.swift; sourceTree = "<group>"; };
+		35FC10E12C4E572100BF3B45 /* SquareGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +100,10 @@
 		35860B882C4CFCA8001603E7 /* Swift Lab */ = {
 			isa = PBXGroup;
 			children = (
+				35FC10E02C4E570800BF3B45 /* Views */,
 				35860BB52C4D0859001603E7 /* Modifiers */,
 				35860B892C4CFCA8001603E7 /* Swift_LabApp.swift */,
 				35860B8B2C4CFCA8001603E7 /* ContentView.swift */,
-				35860BB32C4CFCC6001603E7 /* HapticImageView.swift */,
 				35860B8D2C4CFCAA001603E7 /* Assets.xcassets */,
 				35860B8F2C4CFCAA001603E7 /* Preview Content */,
 			);
@@ -139,6 +141,15 @@
 				35860BB62C4D087C001603E7 /* PressableModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		35FC10E02C4E570800BF3B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35860BB32C4CFCC6001603E7 /* HapticImageView.swift */,
+				35FC10E12C4E572100BF3B45 /* SquareGridView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 				35860BB42C4CFCC6001603E7 /* HapticImageView.swift in Sources */,
 				35860B8C2C4CFCA8001603E7 /* ContentView.swift in Sources */,
 				35860BB72C4D087C001603E7 /* PressableModifier.swift in Sources */,
+				35FC10E22C4E572100BF3B45 /* SquareGridView.swift in Sources */,
 				35860B8A2C4CFCA8001603E7 /* Swift_LabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

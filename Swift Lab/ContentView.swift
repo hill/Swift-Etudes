@@ -26,7 +26,7 @@ struct ContentView: View {
                     NavigationLink(destination: HapticImageView()) {
                         NavLinkView(text: "Day 1")
                     }
-                    NavigationLink(destination: Text("no where yet")) {
+                    NavigationLink(destination: SquareGridView()) {
                         NavLinkView(text: "Day 2")
                     }
                     NavigationLink(destination: Text("no where still")) {
