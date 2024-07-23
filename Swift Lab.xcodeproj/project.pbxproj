@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3561AC292C4FDDD700D9D88F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3561AC282C4FDDD700D9D88F /* Alamofire */; };
 		35860B8A2C4CFCA8001603E7 /* Swift_LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860B892C4CFCA8001603E7 /* Swift_LabApp.swift */; };
 		35860B8C2C4CFCA8001603E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860B8B2C4CFCA8001603E7 /* ContentView.swift */; };
 		35860B8E2C4CFCAA001603E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35860B8D2C4CFCAA001603E7 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 		35860BB42C4CFCC6001603E7 /* HapticImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BB32C4CFCC6001603E7 /* HapticImageView.swift */; };
 		35860BB72C4D087C001603E7 /* PressableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860BB62C4D087C001603E7 /* PressableModifier.swift */; };
 		35FC10E22C4E572100BF3B45 /* SquareGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC10E12C4E572100BF3B45 /* SquareGridView.swift */; };
+		35FC10E52C4FD90400BF3B45 /* HNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC10E42C4FD90400BF3B45 /* HNView.swift */; };
+		35FC10E82C4FD91B00BF3B45 /* HNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC10E72C4FD91B00BF3B45 /* HNService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		35860BB62C4D087C001603E7 /* PressableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableModifier.swift; sourceTree = "<group>"; };
 		35FC10E12C4E572100BF3B45 /* SquareGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGridView.swift; sourceTree = "<group>"; };
 		35FC10E32C4E709200BF3B45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		35FC10E42C4FD90400BF3B45 /* HNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNView.swift; sourceTree = "<group>"; };
+		35FC10E72C4FD91B00BF3B45 /* HNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3561AC292C4FDDD700D9D88F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 		35860B882C4CFCA8001603E7 /* Swift Lab */ = {
 			isa = PBXGroup;
 			children = (
+				35FC10E62C4FD90D00BF3B45 /* Services */,
 				35FC10E02C4E570800BF3B45 /* Views */,
 				35860BB52C4D0859001603E7 /* Modifiers */,
 				35860B892C4CFCA8001603E7 /* Swift_LabApp.swift */,
@@ -150,8 +157,17 @@
 			children = (
 				35860BB32C4CFCC6001603E7 /* HapticImageView.swift */,
 				35FC10E12C4E572100BF3B45 /* SquareGridView.swift */,
+				35FC10E42C4FD90400BF3B45 /* HNView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		35FC10E62C4FD90D00BF3B45 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				35FC10E72C4FD91B00BF3B45 /* HNService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +186,9 @@
 			dependencies = (
 			);
 			name = "Swift Lab";
+			packageProductDependencies = (
+				3561AC282C4FDDD700D9D88F /* Alamofire */,
+			);
 			productName = "Swift Lab";
 			productReference = 35860B862C4CFCA8001603E7 /* Swift Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -242,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 35860B7D2C4CFCA8001603E7;
+			packageReferences = (
+				35FC10E92C4FDC0B00BF3B45 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 35860B872C4CFCA8001603E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,8 +308,10 @@
 			files = (
 				35860BB42C4CFCC6001603E7 /* HapticImageView.swift in Sources */,
 				35860B8C2C4CFCA8001603E7 /* ContentView.swift in Sources */,
+				35FC10E82C4FD91B00BF3B45 /* HNService.swift in Sources */,
 				35860BB72C4D087C001603E7 /* PressableModifier.swift in Sources */,
 				35FC10E22C4E572100BF3B45 /* SquareGridView.swift in Sources */,
+				35FC10E52C4FD90400BF3B45 /* HNView.swift in Sources */,
 				35860B8A2C4CFCA8001603E7 /* Swift_LabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35FC10E92C4FDC0B00BF3B45 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3561AC282C4FDDD700D9D88F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35FC10E92C4FDC0B00BF3B45 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35860B7E2C4CFCA8001603E7 /* Project object */;
 }

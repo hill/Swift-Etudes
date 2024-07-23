@@ -24,13 +24,13 @@ struct ContentView: View {
                     Spacer().frame(height: 100)
                     
                     NavigationLink(destination: HapticImageView()) {
-                        NavLinkView(text: "Etude 1: Haptic Image")
+                        NavLinkView(text: "Haptic Image")
                     }
                     NavigationLink(destination: SquareGridView()) {
-                        NavLinkView(text: "Etude 2: Palettes")
+                        NavLinkView(text: "Palettes")
                     }
-                    NavigationLink(destination: Text("no where still")) {
-                        NavLinkView(text: "Etude 3")
+                    NavigationLink(destination: HNView()) {
+                        NavLinkView(text: "HN")
                     }
                 }
                 .padding()
