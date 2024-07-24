@@ -52,3 +52,12 @@ Learned about:
 - `guard` I don't really understand. It feels like `guard (!isLoading) else { return }` it is the same as doing `if (isLoading) { return }` ... and just different syntax for expressing that. It might be slightly more readable? idk.
 - lists
     - you can do the "pull to refresh" with `.refreshable { }` modifier
+
+### Day 4: HN Improvements
+
+<video src="./assets/3_tophn.MP4" width="200px" />
+
+- Swipe list to open in safari
+- Sheet to open a webview with the hn story
+- Render the hn score in the list
+- 

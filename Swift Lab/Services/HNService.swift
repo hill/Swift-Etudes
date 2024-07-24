@@ -12,6 +12,7 @@ struct Story: Codable {
     let id: Int
     let url: URL
     let title: String
+    let score: Int?
 }
 
 class HNService: ObservableObject {
