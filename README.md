@@ -55,9 +55,8 @@ Learned about:
 
 ### Day 4: HN Improvements
 
-<video src="./assets/3_tophn.MP4" width="200px" />
-
 - Swipe list to open in safari
 - Sheet to open a webview with the hn story
 - Render the hn score in the list
-- 
+
+<video src="./assets/3_tophn.MP4" />
