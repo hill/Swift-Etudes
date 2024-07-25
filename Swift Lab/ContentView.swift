@@ -32,6 +32,9 @@ struct ContentView: View {
                     NavigationLink(destination: HNView()) {
                         NavLinkView(text: "HN")
                     }
+                    NavigationLink(destination: PIDView()) {
+                        NavLinkView(text: "PID")
+                    }
                 }
                 .padding()
                 .ignoresSafeArea()

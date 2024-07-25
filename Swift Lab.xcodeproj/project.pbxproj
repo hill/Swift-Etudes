@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353388952C52645400F04A7B /* PIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353388942C52645400F04A7B /* PIDView.swift */; };
 		3561AC292C4FDDD700D9D88F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3561AC282C4FDDD700D9D88F /* Alamofire */; };
 		35860B8A2C4CFCA8001603E7 /* Swift_LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860B892C4CFCA8001603E7 /* Swift_LabApp.swift */; };
 		35860B8C2C4CFCA8001603E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35860B8B2C4CFCA8001603E7 /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		353388932C50FE1B00F04A7B /* Swift-Lab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swift-Lab-Info.plist"; sourceTree = SOURCE_ROOT; };
+		353388942C52645400F04A7B /* PIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIDView.swift; sourceTree = "<group>"; };
 		35860B862C4CFCA8001603E7 /* Swift Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35860B892C4CFCA8001603E7 /* Swift_LabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_LabApp.swift; sourceTree = "<group>"; };
 		35860B8B2C4CFCA8001603E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				35860BB32C4CFCC6001603E7 /* HapticImageView.swift */,
 				35FC10E12C4E572100BF3B45 /* SquareGridView.swift */,
 				35FC10E42C4FD90400BF3B45 /* HNView.swift */,
+				353388942C52645400F04A7B /* PIDView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353388952C52645400F04A7B /* PIDView.swift in Sources */,
 				35860BB42C4CFCC6001603E7 /* HapticImageView.swift in Sources */,
 				35860B8C2C4CFCA8001603E7 /* ContentView.swift in Sources */,
 				35FC10E82C4FD91B00BF3B45 /* HNService.swift in Sources */,

@@ -59,4 +59,15 @@ Learned about:
 - Sheet to open a webview with the hn story
 - Render the hn score in the list
 
-<video src="./assets/3_tophn.MP4" />
+<video width="320" height="240" controls>
+  <source src="./assets/3_tophn.MP4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### Day 5: PID Controller
+
+- Inspired by a physiology course I'm taking. Human homeostasis seems like one big PID controller.
+- Attempted to build a PID controller in swift
+- Still don't know exactly how you are meant to tune the P,I,D gain values in a PID controller?
+
+<img src="./assets/homeostasis.png" width="200px" />
