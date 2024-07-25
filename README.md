@@ -66,8 +66,26 @@ Learned about:
 
 ### Day 5: PID Controller
 
-- Inspired by a physiology course I'm taking. Human homeostasis seems like one big PID controller.
+- Inspired by a physiology course I'm taking. Human homeostasis seems like a bunch of PID controllers.
+<img src="./assets/homeostasis.png" width="200px" />
 - Attempted to build a PID controller in swift
 - Still don't know exactly how you are meant to tune the P,I,D gain values in a PID controller?
-
-<img src="./assets/homeostasis.png" width="200px" />
+- Learned a tiny bit about swift charts:
+```swift
+Chart(temperatureData) { data in
+    LineMark(
+        x: .value("Time", data.time),
+        y: .value("Temperature", data.temperature)
+    )
+    .foregroundStyle(.blue)
+    RuleMark(y: .value("Setpoint", self.setpoint))
+        .foregroundStyle(.red)
+}
+.frame(height: 300)
+```
+- Learned about the `Timer` class ... similar to `setInterval`
+```swift
+Timer.scheduledTimer(withTimeInterval: deltaTime, repeats: true) { _ in
+    // do it
+}
+```
