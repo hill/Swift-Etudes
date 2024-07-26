@@ -71,19 +71,15 @@ struct PIDView: View {
     @State private var time: Double = 0.0
     @State private var temperatureData: [TemperatureData] = []
     
-    let pid = PIDController(kp: 1.0, ki: 0.1, kd: 0.05)
+    @State private var kp: Double = 1.0
+    @State private var ki: Double = 1.0
+    @State private var kd: Double = 0.1
+    
+    let pid = PIDController(kp: 1.0, ki: 1.0, kd: 0.1)
     let deltaTime: Double = 0.1
     
     var body: some View {
         VStack {
-            Text("Current Temperature: \(temperature, specifier: "%.2f")°C")
-            Text("Setpoint: \(setpoint, specifier: "%.2f")°C")
-            Text("Control Output: \(output, specifier: "%.2f")")
-            Slider(value: $setpoint, in: 15.0...30.0, step: 0.1) {
-                Text("Set Setpoint")
-            }
-            .padding()
-            
             Chart(temperatureData) { data in
                 LineMark(
                     x: .value("Time", data.time),
@@ -101,6 +97,68 @@ struct PIDView: View {
             }) {
                 Text("Reset")
             }
+            Text("Current Temperature: \(temperature, specifier: "%.2f")°C")
+            Text("Setpoint: \(setpoint, specifier: "%.2f")°C")
+            Text("Control Output: \(output, specifier: "%.2f")")
+            Group {
+                Stepper {
+                    Text("kp: \(kp, specifier: "%.2f")")
+                } onIncrement: {
+                    kp += 0.1
+                    pid.kp = kp
+                } onDecrement: {
+                    kp -= 0.1
+                    pid.kp = kp
+                }
+                .padding()
+                .background(Color.green.opacity(0.2))
+                .cornerRadius(10)
+                
+                Stepper {
+                    Text("ki: \(ki, specifier: "%.2f")")
+                } onIncrement: {
+                    ki += 0.1
+                    pid.ki = ki
+                } onDecrement: {
+                    ki -= 0.1
+                    pid.ki = ki
+                }
+                .padding()
+                .background(Color.orange.opacity(0.2))
+                .cornerRadius(10)
+                
+                Stepper {
+                    Text("kd: \(kd, specifier: "%.2f")")
+                } onIncrement: {
+                    kd += 0.1
+                    pid.kd = kd
+                } onDecrement: {
+                    kd -= 0.1
+                    pid.kd = kd
+                }
+                .padding()
+                .background(Color.purple.opacity(0.2))
+                .cornerRadius(10)
+            }.padding(.horizontal)
+            
+            Button(action: {
+                kp = 0.0
+                ki = 0.0
+                kd = 0.0
+                pid.kp = kp
+                pid.ki = ki
+                pid.kd = kd
+            }) {
+                Text("Zero Gains")
+                    .padding()
+                    .background(Color.red.opacity(0.2))
+                    .foregroundColor(.red)
+                    .cornerRadius(10)
+            }
+            Slider(value: $setpoint, in: 0...30.0, step: 0.1) {
+                Text("Set Setpoint")
+            }
+            .padding()
         }
         .onAppear(perform: startSimulation)
     }
